@@ -9,7 +9,7 @@ return {
 		vim.g.loaded_netrwPlugin = 1
 		-- remove the line between nvim-tree and buffer
 		-- See https://www.reddit.com/r/neovim/comments/utkrdz/what_is_the_line_between_nvimtree_and_buffer/
-		vim.api.nvim_set_hl(0, "NvimTreeWinSeparator", { fg = "bg", bg = "bg" })
+		-- vim.api.nvim_set_hl(0, "NvimTreeWinSeparator", { fg = "bg", bg = "bg" })
 
 		nvimtree.setup({
 			view = {

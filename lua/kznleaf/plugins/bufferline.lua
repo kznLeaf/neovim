@@ -45,7 +45,7 @@ return {
 					filetype = "NvimTree",
 					text = "NvimTree",
 					text_align = "center",
-					separator = false,
+					separator = true,
 				},
 			},
 		},
