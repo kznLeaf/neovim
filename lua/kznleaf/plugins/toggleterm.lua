@@ -7,7 +7,7 @@ return {
 		direction = "float",
 		float_opts = {
 			border = "curved", -- 关键美化：使用圆角边框 (还有 'shadow', 'double', 'single')
-			winblend = 3, -- 稍微带一点点透明度，透出后面的代码
+			-- winblend = 3, -- 稍微带一点点透明度，透出后面的代码
 			highlights = {
 				border = "Normal",
 				background = "Normal",
