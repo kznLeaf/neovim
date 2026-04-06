@@ -17,6 +17,10 @@ return {
 				if vim.bo.filetype == "NvimTree" then
 					return
 				end
+				if vim.bo.filetype == "qf" then
+					vim.cmd("cclose")
+					return
+				end
 
 				-- 获取当前所有列出的 buffer
 				local buffers = vim.fn.getbufinfo({ buflisted = 1 })
