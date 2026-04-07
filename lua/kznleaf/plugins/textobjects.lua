@@ -112,12 +112,13 @@ return {
 		end)
 
 		------------------- 重复操作的快捷键 -------------------
-		local ts_repeat_move = require("nvim-treesitter-textobjects.repeatable_move")
+		-- 这里的快捷键可能会覆盖vim原生的 ; , 所以注释掉了
+		-- local ts_repeat_move = require("nvim-treesitter-textobjects.repeatable_move")
 
 		-- Repeat movement with ; and ,
 		-- ensure ; goes forward and , goes backward regardless of the last direction
-		vim.keymap.set({ "n", "x", "o" }, ";", ts_repeat_move.repeat_last_move_next)
-		vim.keymap.set({ "n", "x", "o" }, ",", ts_repeat_move.repeat_last_move_previous)
+		-- vim.keymap.set({ "n", "x", "o" }, ";", ts_repeat_move.repeat_last_move_next)
+		-- vim.keymap.set({ "n", "x", "o" }, ",", ts_repeat_move.repeat_last_move_previous)
 
 		-- vim way: ; goes to the direction you were moving. f F t T
 		-- vim.keymap.set({ "n", "x", "o" }, ";", ts_repeat_move.repeat_last_move)
