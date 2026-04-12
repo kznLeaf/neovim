@@ -18,7 +18,7 @@ return {
 			-- "  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
 			-- "                                                     ",
 			"                                                                   ",
-			"      ████ ██████           █████      ██        with LazyVim",
+			"      ████ ██████           █████      ██                    ",
 			"     ███████████             █████                            ",
 			"     █████████ ███████████████████ ███   ███████████  ",
 			"    █████████  ███    █████████████ █████ ██████████████  ",
@@ -31,10 +31,10 @@ return {
 		dashboard.section.buttons.val = {
 			dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
 			dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
-			dashboard.button("SPC ff", "󰱼 > Find File", "<cmd>Telescope find_files<CR>"),
+			dashboard.button("SPC ff", "󰱼  > Find File", "<cmd>Telescope find_files<CR>"),
 			dashboard.button("SPC fs", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
 			dashboard.button("SPC wr", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
-			dashboard.button("q", " > Quit NVIM", "<cmd>qa<CR>"),
+			dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
 		}
 		local function footer()
 			local footer_datetime = os.date("  %m-%d-%Y   %H:%M:%S")
@@ -80,11 +80,11 @@ return {
 
 		local opts = {
 			layout = {
-				{ type = "padding", val = 5 },
+				{ type = "padding", val = 4 },
 				section.header,
 				{ type = "padding", val = 4 },
 				section.buttons,
-				{ type = "padding", val = 1 },
+				{ type = "padding", val = 2 },
 				section.bottom_section,
 				{ type = "padding", val = 1 },
 				section.footer,

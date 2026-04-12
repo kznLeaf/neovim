@@ -11,7 +11,6 @@ return {
 		ts.install({
 			"go",
 			"gomod",
-			"gowork",
 			"gosum",
 			"rust",
 			"python",
